@@ -59,6 +59,64 @@ header .nav-items ul li:hover {
   border-bottom: 1px solid #950101;
 }
 
+.homesection {
+  height: 707px;
+  background: #3D0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 245px;
+}
+
+.homesection h2 {
+  color: #950101;
+  font-size: 85px;
+}
+
+.homesection h1 {
+  color: #950101;
+  font-size: 74px;
+}
+
+.homesection p {
+  color: #950101;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.homesection .home-btn {
+  background: #000000;
+  width: 95px;
+  height: 30px;
+  padding: 6px;
+  border-radius: 3px;
+  margin-top: 24px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+.homesection .home-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.homesection .home-btn a {
+  color: #41576B;
+}
+
+.homesection .home-btn a:hover {
+  color: #FF0000;
+}
+
 @media (max-width: 700px) {
   header {
     -webkit-box-orient: vertical;
@@ -77,6 +135,16 @@ header .nav-items ul li:hover {
   header .nav-items {
     padding: 14px;
     border-top: 1px solid white;
+  }
+  .homesection {
+    padding-left: 15px;
+    height: 555px;
+  }
+  .homesection h2 {
+    font-size: 62px;
+  }
+  .homesection h1 {
+    font-size: 55px;
   }
 }
 /*# sourceMappingURL=style.css.map */
