@@ -6,6 +6,10 @@
   font-family: 'Londrina Solid', cursive;
 }
 
+body {
+  background: #3D0000;
+}
+
 li {
   list-style-type: none;
 }
@@ -33,7 +37,13 @@ header {
 
 header .logo {
   width: 300px;
-  padding: 13px;
+  padding: 6px;
+}
+
+header .logo a {
+  font-family: 'Smooch', cursive;
+  font-size: 34px;
+  letter-spacing: 2px;
 }
 
 header .nav-items {
@@ -43,7 +53,7 @@ header .nav-items {
 header .nav-items ul li {
   color: #FF0000;
   font-size: 20px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
   margin: 0 10px;
   font-weight: 900;
   -webkit-box-align: center;
@@ -53,6 +63,7 @@ header .nav-items ul li {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 5px;
+  font-family: 'Bebas Neue', cursive;
 }
 
 header .nav-items ul li:hover {
@@ -117,6 +128,82 @@ header .nav-items ul li:hover {
   color: #FF0000;
 }
 
+.projects {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #3D0000;
+}
+
+.projects h2 {
+  padding: 49px 0px;
+  font-size: 39px;
+  color: #950101;
+}
+
+.projects .sharingan .sharingan-home {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .sharingan .sharingan-home .image-box-s {
+  width: 60%;
+}
+
+.projects .sharingan .sharingan-home .image-box-s img {
+  border-radius: 19px;
+}
+
+.projects .sharingan .sharingan-home .sharingan-home-right {
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .sharingan .sharingan-home .sharingan-home-right p {
+  width: 298px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  background: #000;
+  color: #41576B;
+  padding: 18px;
+  line-height: 1.5;
+  border-radius: 13px;
+  letter-spacing: 3px;
+}
+
+.projects .gallery {
+  padding-top: 47px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .gallery .mini-image {
+  width: 449px;
+  margin: 0px 3px;
+}
+
+.projects .gallery .mini-image img {
+  border-radius: 12px;
+}
+
 @media (max-width: 700px) {
   header {
     -webkit-box-orient: vertical;
@@ -132,6 +219,9 @@ header .nav-items ul li:hover {
             align-items: center;
     height: 120px;
   }
+  header .logo {
+    text-align: center;
+  }
   header .nav-items {
     padding: 14px;
     border-top: 1px solid white;
@@ -145,6 +235,22 @@ header .nav-items ul li:hover {
   }
   .homesection h1 {
     font-size: 55px;
+  }
+  .projects .sharingan .sharingan-home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery .mini-image {
+    max-width: 300px;
+    margin: 10px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
