@@ -242,13 +242,16 @@ header .nav-items ul li:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .gallery {
+  .projects .sharingan .sharingan-home .image-box-s {
+    width: 364px;
+  }
+  .projects .gallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .gallery .mini-image {
+  .projects .gallery .mini-image {
     max-width: 300px;
     margin: 10px 0px;
   }

@@ -221,6 +221,9 @@ header {
         .sharingan{
             .sharingan-home{
                 flex-direction: column;
+                
+            .image-box-s {
+               width: 364px;
             }
         }
     }
@@ -230,5 +233,6 @@ header {
             max-width: 300px;
             margin: 10px 0px;
         }
+    }
     }
 }
