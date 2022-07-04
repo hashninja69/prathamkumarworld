@@ -70,9 +70,19 @@ header .nav-items ul li:hover {
   border-bottom: 1px solid #950101;
 }
 
+.homesection::before {
+  content: '';
+  background: url(./images/background.jpg);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
 .homesection {
   height: 707px;
-  background: #3D0000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +196,23 @@ header .nav-items ul li:hover {
   line-height: 1.5;
   border-radius: 13px;
   letter-spacing: 3px;
+}
+
+.projects .sharingan .sharingan-home .sharingan-home-right .live-link {
+  background: #000000;
+  width: 70px;
+  text-align: center;
+  height: 36px;
+  padding: 8px 0px;
+  margin-top: 15px;
+  border-radius: 7px;
+}
+
+.projects .sharingan .sharingan-home .sharingan-home-right .live-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .projects .gallery {
