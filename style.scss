@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #3D0000;
+    background: #4a7f63;
 }
 
 li {
@@ -31,7 +31,7 @@ img {
 
 header {
     justify-content: space-around;
-    background: #000000;
+    background: #1D1D1D;
     height: 55px;
 
     .logo {
@@ -51,33 +51,35 @@ header {
 
         ul {
             li {
-                color: #FF0000;
-                font-size: 20px;
-                letter-spacing: 2.5px;
-                margin: 0 10px;
-                font-weight: 900;
-                align-items: center;
-                justify-content: center;
-                padding-bottom: 5px;
-                font-family: 'Bebas Neue', cursive;
+                a {
+                    color: #FF0000;
+                    font-size: 20px;
+                    letter-spacing: 2.5px;
+                    margin: 0 10px;
+                    font-weight: 900;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 5px;
+                    font-family: 'Bebas Neue', cursive;
 
-                &:hover {
-                    border-bottom: 1px solid #950101;
+                    &:hover {
+                        border-bottom: 1px solid #950101;
+                    }
                 }
             }
         }
     }
 }
 
-.homesection::before{
+.homesection::before {
     content: '';
-     background: url(./images/background.jpg);
-     width: 100%;
-     height: 100vh;
-     position: absolute;
-     left: 0;
-     z-index: -1;
-     background-size: cover;
+    background: url(./images/background.jpg);
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
 }
 
 
@@ -139,7 +141,6 @@ header {
     width: 100%;
     height: 700px;
     flex-direction: column;
-    background: #3D0000;
 
     h2 {
         padding: 49px 0px;
@@ -187,7 +188,8 @@ header {
                     padding: 8px 0px;
                     margin-top: 15px;
                     border-radius: 7px;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.1);
                         transition: 500ms;
                     }
@@ -213,6 +215,155 @@ header {
 
 
 
+.skills {
+    height: 700px;
+    align-items: center;
+
+
+
+    .s-left {
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 39px;
+            color: #950101;
+            margin-bottom: 29px;
+        }
+
+        p {
+            text-align: center;
+            width: 514px;
+            line-height: 1.2;
+            background: #000;
+            color: #41576B;
+            border-radius: 13px;
+            height: 106px;
+            padding: 11px;
+            letter-spacing: 1.6px;
+        }
+    }
+
+    .s-right {
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+
+        progress {
+            height: 15px;
+            border: none;
+        }
+    }
+}
+
+
+.contactMe {
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 39px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #950101;
+
+    }
+
+    p {
+        word-spacing: 3px;
+        letter-spacing: 0.2px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    form {
+        flex-direction: column;
+        background: #000;
+        color: #41576B;
+        height: 400px;
+        padding: 20px;
+        height: 240px;
+        border-radius: 13px;
+
+        .form-header {
+            input {
+                margin: 0 10px;
+                padding: 0 15px;
+            }
+        }
+
+        input {
+            border: none;
+            height: 35px;
+            width: 235px;
+        }
+    }
+
+    .subject {
+        input {
+            width: 494px;
+            margin-left: 8px;
+            margin-top: 20px;
+            padding: 0 15px;
+        }
+
+    }
+
+    .message {
+        input {
+            height: 100px !important;
+        }
+    }
+
+    button {
+        width: 128px;
+        height: 39px;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: #000;
+            color: #41576B;
+            border: 1px solid #41576B;
+            transition: 500ms;
+        }
+    }
+
+}
+
+
+footer {
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+
+    .footer-img {
+        width: 45px;
+        margin: 0 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:700px) {
     header {
@@ -233,7 +384,7 @@ header {
     }
 
 
-    .homesection::before{
+    .homesection::before {
         // background: url(./images/mobile-background.jpg);
     }
 
@@ -252,14 +403,19 @@ header {
 
 
 
+    .lodge {
+        margin-top: 680px !important;
+    }
 
     .projects {
+
+
         .sharingan {
             .sharingan-home {
                 flex-direction: column;
 
                 .image-box-s {
-                    width: 364px;
+                    width: 300px;
                 }
             }
         }
@@ -271,8 +427,53 @@ header {
                 max-width: 300px;
                 margin: 10px 0px;
             }
-            .v-h{
-                height: 198px;  
+
+            .v-h {
+                height: 198px;
+            }
+        }
+    }
+
+
+    .skills {
+        height: 610px;
+        margin-top: 485px;
+        flex-direction: column;
+
+        .s-left {
+            width: 100%;
+
+            p {
+                width: 338px;
+                height: 143px;
+            }
+        }
+
+        .s-right {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+
+    .contactMe {
+        height: 550px;
+        form {
+            max-width: 340px;
+            height: 295px;
+            .form-header {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                input {
+                    margin: 5px 10px;
+                }
+            }
+            .subject{
+                input{
+                    max-width: 235px;
+                }
             }
         }
     }
