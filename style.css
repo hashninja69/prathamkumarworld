@@ -282,5 +282,8 @@ header .nav-items ul li:hover {
     max-width: 300px;
     margin: 10px 0px;
   }
+  .projects .gallery .v-h {
+    height: 198px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
